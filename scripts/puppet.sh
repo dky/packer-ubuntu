@@ -1,3 +1,3 @@
 #!/bin/bash
 
-aptitude -y install puppet
+#aptitude -y install puppet

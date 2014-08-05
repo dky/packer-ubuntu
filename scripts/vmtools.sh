@@ -1,4 +1,17 @@
 #!/bin/bash
 
-apt-get -y install open-vm-tools
-echo -n ".host:/ /mnt/hgfs vmhgfs rw,ttl=1,uid=my_uid,gid=my_gid,nobootwait 0 0" >> /etc/fstab
+ISODIR=/home/vagrant
+
+echo "Installing vmware tools"
+#Install development tools
+sudo apt-get update
+aptitude -y install build-essential linux-headers-$(uname -r)
+
+#perform tools install
+cd /tmp
+mkdir -p /mnt/cdrom
+mount -o loop $ISODIR/linux.iso /mnt/cdrom/
+tar zxvf /mnt/cdrom/VMwareTools-*.tar.gz -C /tmp/
+/tmp/vmware-tools-distrib/vmware-install.pl -d
+umount /mnt/cdrom
+rm $ISODIR/linux.iso
