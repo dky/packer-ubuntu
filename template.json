@@ -20,7 +20,7 @@
       "iso_checksum_type": "none",
       "iso_url": "file:/iso/ubuntu-14.04.1-server-amd64.iso",
 		"guest_os_type": "ubuntu-64",
-      "name": "ubuntu-trusty",
+      "name": "trusty-64",
 		"shutdown_command": "echo 'shutdown -P now' > /tmp/shutdown.sh; echo 'install'|sudo -S sh '/tmp/shutdown.sh'",
       "skip_compaction": true,
       "tools_upload_flavor": "linux",
