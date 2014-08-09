@@ -49,6 +49,7 @@
 		  "scripts/ssh.sh",
 		  "scripts/vmtools.sh",
 		  "scripts/puppet.sh",
+		  "scripts/packages.sh",
 		  "scripts/zero.sh"
 			  ],
 		  "type": "shell"
