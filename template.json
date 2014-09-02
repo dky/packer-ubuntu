@@ -36,22 +36,22 @@
 	  }
   }
   ],
-	  "post-processors": [
-		  "vagrant"
-		  ],
-	  "provisioners": [
+  "post-processors": [
+	  "vagrant"
+  ],
+  "provisioners": [
 	  {
 		  "type": "shell",
 		  "execute_command": "echo 'install'|sudo -S sh '{{.Path}}'",
 		  "scripts": [
-		  "scripts/sudo.sh",
-		  "scripts/vagrant.sh",
-		  "scripts/ssh.sh",
-		  "scripts/vmtools.sh",
-		  "scripts/puppet.sh",
-		  "scripts/packages.sh",
-		  "scripts/zero.sh"
-			  ],
+			  "scripts/sudo.sh",
+			  "scripts/vagrant.sh",
+			  "scripts/ssh.sh",
+			  "scripts/vmtools.sh",
+			  "scripts/puppet.sh",
+			  "scripts/packages.sh",
+			  "scripts/zero.sh"
+		  ],
 		  "type": "shell"
 	  }
   ]
