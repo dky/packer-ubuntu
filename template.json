@@ -14,7 +14,7 @@
 		  ],
 	  "boot_wait": "5s",
 	  "disk_size": 10480,
-	  "headless": true,
+	  "headless": false,
 	  "http_directory": "http",
 	  "iso_checksum": "01545fa976c8367b4f0d59169ac4866c",
 	  "iso_checksum_type": "none",
